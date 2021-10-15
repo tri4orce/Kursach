@@ -25,7 +25,7 @@ namespace test
 
     public class Controller: IController
     {
-        private 
+        //private 
         public void Init()
         {
             
