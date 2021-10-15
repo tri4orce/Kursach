@@ -9,3 +9,9 @@ D:\test\obj\Debug\netcoreapp2.0\test.AssemblyInfoInputs.cache
 D:\test\obj\Debug\netcoreapp2.0\test.AssemblyInfo.cs
 D:\test\obj\Debug\netcoreapp2.0\test.dll
 D:\test\obj\Debug\netcoreapp2.0\test.pdb
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.csprojAssemblyReference.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.csproj.CoreCompileInputs.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.AssemblyInfoInputs.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.AssemblyInfo.cs
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.dll
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.pdb
