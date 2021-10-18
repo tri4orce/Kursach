@@ -11,6 +11,7 @@ namespace test
     {
         static void Main(string[] args)
         {
+            Console.WindowWidth = 150;
             //Указать Cust для 6 задания/PhisCust для 7го задания 
             CustController<PhisCust> contr = new CustController<PhisCust>();
             contr.Start();
@@ -58,7 +59,7 @@ namespace test
 
         private void MainMenuHand()
         {
-            var command = Console.ReadLine();
+            var command = Console.ReadKey().KeyChar.ToString();
             Console.Clear();
             switch(command){
                 case "1": 
@@ -144,6 +145,8 @@ namespace test
             {
                 data.Add(new Cust(id, room, name, address, chief) as T);
             }
+            
+            Console.Clear();
         }
 
         public override void PrintTable()

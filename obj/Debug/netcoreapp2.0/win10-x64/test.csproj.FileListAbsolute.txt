@@ -1,0 +1,14 @@
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\hostpolicy.dll
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\hostfxr.dll
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.exe
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.deps.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.runtimeconfig.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.runtimeconfig.dev.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.dll
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\win10-x64\test.pdb
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.csprojAssemblyReference.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.csproj.CoreCompileInputs.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.AssemblyInfoInputs.cache
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.AssemblyInfo.cs
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.dll
+D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\win10-x64\test.pdb
