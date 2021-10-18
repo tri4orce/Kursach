@@ -15,3 +15,8 @@ D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.AssemblyInfoInputs.cache
 D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.AssemblyInfo.cs
 D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.dll
 D:\Kursach\Kursach\obj\Debug\netcoreapp2.0\test.pdb
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\test.deps.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\test.runtimeconfig.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\test.runtimeconfig.dev.json
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\test.dll
+D:\Kursach\Kursach\bin\Debug\netcoreapp2.0\test.pdb
