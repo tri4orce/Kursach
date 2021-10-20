@@ -2,11 +2,17 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Abstract;
 
 namespace Models
 {
+    public enum CustType {
+            CUST,
+            PHIS_CUST
+    }
     public class Cust
     {
+        public CustType Type { get; set; }
         uint id;
         public uint Id { get {return id;} }
         uint room;
@@ -50,7 +56,7 @@ namespace Models
         public Cust()
             :this(0, 0, "", "", "")
         {
-
+            Type = CustType.CUST;
         }
 
         public override string ToString()
@@ -78,13 +84,13 @@ namespace Models
             return c1.ToString() != c2.ToString();
         }
 
-        public virtual string ToColumn()
+        /*public virtual string ToColumn()
         {
             return $"{"Инн", 10}|{"название арендатора", 20}|{"адресс арендатора", 20}|{"фамилия начальника", 20}|{"кабинет начальника", 18}|{"этаж кабинета", 13}|";
         }
         public virtual string ToRow()
         {
             return $"{Id, 10}|{Name, 20}|{Address, 20}|{Chief, 20}|{Room, 18}|{this.GetFloor, 13}|";
-        }
+        }*/
     }
 }
