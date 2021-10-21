@@ -17,9 +17,9 @@ namespace Controllers
             listCust = new List<T>();
         }
 
-        public void Add(T Model)
+        public void Add(object obj)
         {
-            listCust.Add(Model);
+            listCust.Add(obj as T);
         }
 
         public IEnumerable GetAll()
@@ -27,5 +27,4 @@ namespace Controllers
             return listCust;
         }
     }
-
 }

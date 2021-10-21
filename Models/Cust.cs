@@ -18,7 +18,7 @@ namespace Models
         uint room;
         public uint Room { get { return room; } } 
         string name;
-        public string Name { get { return name; } }
+        public string Name { get { return name; } set { name = value; } }
         string address;
         public string Address { get { return address; } }
         string chief;
