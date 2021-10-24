@@ -6,7 +6,7 @@ namespace Abstract
     public interface IStrategy
     {
         void Add(object obj);
-
         IEnumerable GetAll();
+        int GetCount();
     }
 }

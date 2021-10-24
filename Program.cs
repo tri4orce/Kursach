@@ -15,21 +15,57 @@ namespace test
         static void Main(string[] args)
         {
             Console.WindowWidth = 150;
-            //Указать Cust для 6 задания/PhisCust для 7го задания 
-            //CustController<PhisCust> contr = new CustController<PhisCust>();
-            //contr.Start();
+
             Invoker invoker = new Invoker();
-            Console.WriteLine("Выберите тип арендатора: ");
-            Console.WriteLine("1. Cust; 2. PhisCust");
-            var command = Console.ReadKey();
-            IStrategy _ofice;
-            invoker.SetOnStart(new InitCommand(ref _ofice, command.ToString()));
-            invoker.SetOnStart(new AddCommand(_ofice));
-            invoker.Do();
-            Console.WriteLine(_ofice.GetAll())
-            //var type = CustType.CUST;
-            //if (command.ToString() == "1") type = CustType.CUST;
-            //else if (command.ToString() == "2") type = CustType.PHIS_CUST;
+            IStrategy _ofice = Initial();
+            while (true) 
+            {
+                Console.WriteLine(@"1. Добавить арендатора 2. Вывести всех арендаторов");
+                Console.WriteLine("e - выход из программы");
+                var command = Console.ReadKey().KeyChar.ToString();
+                Console.Clear();
+                switch (command) 
+                {
+                    case "1":
+                        invoker.SetOnStart(new AddCommand(_ofice));
+                        invoker.Do();
+                        break;
+                    case "2":
+                        invoker.SetOnStart(new PrintListCommand(_ofice));
+                        invoker.Do();
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Выход из программы");
+                        return;
+                }
+            }
+            
+        }
+
+        static IStrategy Initial() 
+        {
+            while (true) 
+            {
+                Console.WriteLine("Выберите тип арендатора: ");
+                Console.WriteLine("1. Cust; 2. PhisCust");
+                var command = Console.ReadKey().KeyChar.ToString();
+                Console.Clear();
+
+                if (command == "1")
+                {
+                    return new Ofice<Cust>();
+                }
+                else if (command == "2")
+                {
+                    return new Ofice<PhisCust>();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("Введена неверная комманда");
+                }
+            }
             
         }
     }
@@ -48,22 +84,6 @@ namespace test
             {
                 this.OnStart.Execute();
             }
-        }
-    }
-    public class Viewer
-    {
-        private IController controller;
-        public void Init(IController controller)
-        {
-            this.controller = controller;
-            Console.WriteLine("Здравствуйте! Выберите команду из предложенных");
-        }
-
-        public void MainMenu()
-        {
-            Console.WriteLine("1. Добавить арендатора 2. Вывести всех арендаторов списком 3. Вывести всех арендаторов таблицей");
-            Console.WriteLine("e - выход из программы");
-            controller.Command("MainMenu");
         }
     }
 }

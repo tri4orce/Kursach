@@ -26,5 +26,9 @@ namespace Controllers
         {
             return listCust;
         }
+        public int GetCount() 
+        {
+            return (GetAll() as List<T>).Count;
+        }
     }
 }
