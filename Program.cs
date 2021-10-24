@@ -19,9 +19,11 @@ namespace test
             //CustController<PhisCust> contr = new CustController<PhisCust>();
             //contr.Start();
             Invoker invoker = new Invoker();
-            Console.WriteLine("Выберите тип арендатора (классы Cust или PhisCust)");
-            //var command = Console.ReadKey();
-            Ofice<Cust> _ofice = new Ofice<Cust>();
+            Console.WriteLine("Выберите тип арендатора: ");
+            Console.WriteLine("1. Cust; 2. PhisCust");
+            var command = Console.ReadKey();
+            IStrategy _ofice;
+            invoker.SetOnStart(new InitCommand(ref _ofice, command.ToString()));
             invoker.SetOnStart(new AddCommand(_ofice));
             invoker.Do();
             Console.WriteLine(_ofice.GetAll())
